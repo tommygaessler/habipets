@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+
+/*----- Padding Fix -----*/
+
+*
+{
+	box-sizing: border-box;
+}
+
+/*----- Body -----*/
+
+body
+{
+	margin:0;
+}
+
+/*----- Clear Fix -----*/
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*----- Grid -----*/
+
+.row {
+  width: 90%;
+  max-width: 850px;
+  margin: auto;
+}
+
+.column {
+  float: left;
+  margin-right: 2%;
+}
+
+.column.two-third {
+  width: 65%;
+}
+.column.one-half {
+  width: 49%;
+}
+.column.one-third {
+  width: 32%
+}
+
+.column:last-of-type {
+  margin-right: 0;
+}
+
+/*----- Youtube iFrame -----*/
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0px;
+    height: 0;
+    margin-bottom: 50px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*----- Google Maps iFrame -----*/
+
+iframe
+{
+	margin-top: 30px;
+	width: 100%;
+}
+
+/*----- Header -----*/
+
+header
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+header img
+{
+	float: left;
+	width: 100px;
+}
+
+header nav
+{
+	float: right;
+	margin-top: 30px;
+}
+
+header nav a
+{
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+
+.genericon-instagram
+{
+	margin-left: 30px;
+}
+
+a:hover
+{
+	color: #a71c37;
+}
+
+hr
+{
+	border-color: #a71c37;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+main p
+{
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+	color: black;
+}
+
+main a
+{
+	text-decoration: none;
+}
+
+main a h2:hover
+{
+	color: black;
+}
+
+main img
+{
+	width: 100%;
+}
+
+.welcome
+{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+main h1
+{
+	font-family: 'Roboto Slab', serif;
+	text-align: center;
+}
+
+h2
+{
+	color: #a71c37;
+	text-align: center;
+	font-family: 'Roboto Slab', serif;
+}
+
+footer
+{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+footer h1
+{
+	color: black;
+	font-family: 'Roboto Slab', serif;
+}
+
+footer a
+{
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	text-align: center;
+}
+
+footer a h1:hover
+{
+	color: #a71c37;
+}
+
+/*----- MQ -----*/
+
+@media (max-width: 690px) {
+
+	header img
+	{
+		width: 80px;
+	}
+
+	footer h1
+	{
+		text-align: center;
+	}
+
+	h1
+	{
+		font-size: 25px;
+	}
+
+	h2
+	{
+		font-size: 20px;
+	}
+
+	.space
+	{
+		margin-top: 40px;
+	}
+
+  	.column 
+  	{
+    	width: 100% !important;
+    	margin-right: 0;
+  	}
+}
